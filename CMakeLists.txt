@@ -3,9 +3,17 @@ cmake_minimum_required(VERSION 2.8) #Проверка версии CMake.
 set(PROJECT_NAME All_labs) #Создаем обычную локальную переменную с именем проекта
 project(${PROJECT_NAME}) # Название проекта
 
-set(vector vector) #Переменная с именем приложения
-set(vectorlib vectorlib) #Переменная с именем библиотеки
-set(vectortest vectortest)
+set(stack stack) #Переменная с именем приложения
+set(stacklib stacklib) #Переменная с именем библиотеки
+set(stacktest stacktest)
+
+set(postf postf) #Переменная с именем приложения
+set(postflib postflib) #Переменная с именем библиотеки
+set(postftest postftest)
+
+set(queue queue) #Переменная с именем приложения
+set(queuelib queuelib) #Переменная с именем библиотеки
+set(queuetest queuetest)
 
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE) #Создается переменная CMAKE_CONFIGURATION_TYPES со значением "Debug;Release" и меткой/разделом Configs, переменная сохраниется в специальном файле доступном из всех файлов,
 if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компилятора вариантов сборки
@@ -14,14 +22,25 @@ endif()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
 add_subdirectory(gtest)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/vectorlib) #Добавляем директорию "${CMAKE_CURRENT_SOURCE_DIR}/vectorlib" в дополняемые каталоги включаемых файлов
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/stacklib) #Добавляем директорию "${CMAKE_CURRENT_SOURCE_DIR}/vectorlib" в дополняемые каталоги включаемых файлов
 #${CMAKE_CURRENT_SOURCE_DIR} - стандартная переменная с адресом рабочей директории
-add_subdirectory(vector) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
-add_subdirectory(vectorlib)
-add_subdirectory(vectortest)
+add_subdirectory(stack) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
+add_subdirectory(stacklib)
+add_subdirectory(stacktest)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/postflib)
+add_subdirectory(postf) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
+add_subdirectory(postflib)
+add_subdirectory(postftest)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/queuelib)
+add_subdirectory(queue) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
+add_subdirectory(queuelib)
+add_subdirectory(queuetest)
 
+add_subdirectory(PostfixInterface)
+
+add_subdirectory(QueueInterface)
 #file(GLOB hdrs "*.h*") #Добавляем в переменную hdrs все файлы с расширением .h
 #file(GLOB srcs "*.cpp") #Добавляем в переменную srcs все файлы с расширением .cpp
 

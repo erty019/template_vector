@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52FA77F1-FC7C-3A33-AF93-D48D22E92FAF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\жзнь\учёба 2023-2024\Laba 3\template_stack\gtest;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\stacklib;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\postflib;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\queuelib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\жзнь\учёба 2023-2024\Laba 3\template_stack\gtest;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\stacklib;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\postflib;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\queuelib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/жзнь/учёба 2023-2024/Laba 3/template_stack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\git\bin\cmake.exe "-SD:/жзнь/учёба 2023-2024/Laba 3/template_stack" "-BD:/жзнь/учёба 2023-2024/Laba 3/template_stack/build" --check-stamp-file "D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\git\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\git\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\git\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\git\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\git\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/жзнь/учёба 2023-2024/Laba 3/template_stack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\git\bin\cmake.exe "-SD:/жзнь/учёба 2023-2024/Laba 3/template_stack" "-BD:/жзнь/учёба 2023-2024/Laba 3/template_stack/build" --check-stamp-file "D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\git\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\git\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\git\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\git\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\git\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\git\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\git\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\git\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\ZERO_CHECK.vcxproj">
+      <Project>{393ADD48-7F77-3DF5-AC1C-F3A93839491D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\PostfixInterface\Postfixgui.vcxproj">
+      <Project>{FA7ED08A-7411-3952-9BF5-3D989DD01223}</Project>
+      <Name>Postfixgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\QueueInterface\Queuegui.vcxproj">
+      <Project>{77B12563-3509-3B9A-8D8A-02122EBFC5A3}</Project>
+      <Name>Queuegui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\gtest\gtest.vcxproj">
+      <Project>{4F8F8C70-6D82-3B3E-B92D-C4BE294D2447}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\postf\postf.vcxproj">
+      <Project>{0B504255-5065-3D36-8E5D-8B83CB14E854}</Project>
+      <Name>postf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\postflib\postflib.vcxproj">
+      <Project>{A848062F-160F-3936-87CD-C9B22FFD4230}</Project>
+      <Name>postflib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\postftest\postftest.vcxproj">
+      <Project>{A4F8E041-2402-36F4-9603-613068E6A73D}</Project>
+      <Name>postftest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\queue\queue.vcxproj">
+      <Project>{A384C10A-12F5-36BE-8210-7CC8890B1E40}</Project>
+      <Name>queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\queuelib\queuelib.vcxproj">
+      <Project>{8616770A-3C0E-3A15-BE7B-AF2C029032B8}</Project>
+      <Name>queuelib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\queuetest\queuetest.vcxproj">
+      <Project>{1A7CBF40-971A-30B7-A608-6B26227D86E6}</Project>
+      <Name>queuetest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\stack\stack.vcxproj">
+      <Project>{5B2D2B23-1766-3BF0-82E3-C2C0F29A6AD4}</Project>
+      <Name>stack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\stacklib\stacklib.vcxproj">
+      <Project>{5CF6EE36-9E88-3327-B24A-F45F9D2C2791}</Project>
+      <Name>stacklib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\жзнь\учёба 2023-2024\Laba 3\template_stack\build\stacktest\stacktest.vcxproj">
+      <Project>{5BE5C09E-8F59-3DDA-A52A-A82F41BAD3D5}</Project>
+      <Name>stacktest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

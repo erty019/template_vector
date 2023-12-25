@@ -1,0 +1,14 @@
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/ALL_BUILD.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/ZERO_CHECK.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/gtest/CMakeFiles/gtest.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/stack/CMakeFiles/stack.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/stacklib/CMakeFiles/stacklib.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/stacktest/CMakeFiles/stacktest.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/postf/CMakeFiles/postf.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/postflib/CMakeFiles/postflib.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/postftest/CMakeFiles/postftest.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/queue/CMakeFiles/queue.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/queuelib/CMakeFiles/queuelib.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/queuetest/CMakeFiles/queuetest.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/PostfixInterface/CMakeFiles/Postfixgui.dir
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/QueueInterface/CMakeFiles/Queuegui.dir

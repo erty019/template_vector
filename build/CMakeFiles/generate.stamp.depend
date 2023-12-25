@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/git/share/cmake-3.27/Modules/CMakeCInformation.cmake
+D:/git/share/cmake-3.27/Modules/CMakeCXXInformation.cmake
+D:/git/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+D:/git/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
+D:/git/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
+D:/git/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
+D:/git/share/cmake-3.27/Modules/CMakeRCInformation.cmake
+D:/git/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake
+D:/git/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake
+D:/git/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/git/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake
+D:/git/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake
+D:/git/share/cmake-3.27/Modules/Compiler/MSVC.cmake
+D:/git/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake
+D:/git/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake
+D:/git/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/git/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake
+D:/git/share/cmake-3.27/Modules/Platform/Windows.cmake
+D:/git/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/CMakeLists.txt
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/3.27.6/CMakeCCompiler.cmake
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/3.27.6/CMakeCXXCompiler.cmake
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/3.27.6/CMakeRCCompiler.cmake
+D:/жзнь/учёба 2023-2024/Laba 3/template_stack/build/CMakeFiles/3.27.6/CMakeSystem.cmake
